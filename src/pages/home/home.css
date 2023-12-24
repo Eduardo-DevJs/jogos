@@ -1,0 +1,41 @@
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.lista_jogos{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.item_jogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  gap: 10px;
+}
+
+.title_game,
+.data {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.link_more{
+  background-color: rgb(10, 129, 226);
+  padding: .5rem .8rem;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+@media(max-width: 768px){
+  .lista_jogos{
+    grid-template-columns: 1fr;
+  }
+}
